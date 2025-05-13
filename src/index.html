@@ -13,6 +13,44 @@
       color: #333;
     }
 
+    .skills ul {
+      list-style-type: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .skills li {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 180px;
+    }
+
+    .skills li:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .skills li i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    .skills li span {
+      font-weight: bold;
+    }
+
     header {
       background-color: #333;
       color: #fff;
@@ -100,6 +138,7 @@
 
   <nav>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -114,6 +153,18 @@
         I have experience on creating applications in desktop using the .NET framework—and studying more about Quality Assurance!
       </p>
     </div>
+  </section>
+  
+    <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C# .NET</li>
+      <li>MySQL</li>
+      <li>SSMS</li>
+      <li>GitHub</li>
+      <li>Jira</li>
+      <li>Java</li>
+    </ul>
   </section>
 
   <section id="projects">
