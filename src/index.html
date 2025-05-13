@@ -1,5 +1,152 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: 'Century Gothic', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      background-color: #444;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    #about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .photo {
+      flex: 1 1 200px;
+    }
+
+    .photo img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 100px;
+      border: 4px solid #333;
+    }
+
+    .about-text {
+      flex: 2 1 300px;
+    }
+
+    .project {
+      background: #fff;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 5px solid #333;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      #about {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .photo img {
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ahrren R. Asumbrado</h1>
+    <p>Information Technology | Software Development</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="photo">
+      <img src="asumbrado.jpg" alt="Ahrren Asumbrado">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Hello! I'm Ahrren. A final-year Information Technology student from Colegio de Sta. Tereas de Avila. My interest lies in Software Development—specifically in Quality Assurance.
+        I have experience on creating applications in desktop using the .NET framework—and studying more about Quality Assurance!
+      </p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Internship Project</h3>
+      <p>Entry and Impairment Sharing System.</p>
+      <p>A module in an existing system where we redid the functions for sharing information of entries and impairment.</p>
+      <p>Tools and Technologies: C#, .NET Framework, Microsoft Visual Studio, SQL Server Management Studio</p>
+    </div>
+        <div class="project">
+      <h3>Internship Project</h3>
+      <p>HRManager</p>
+      <p>An existing web system for Human Resources—which we developed into a mobile application.</p>
+      <p>Tools and Technologies: Dart, Flutter Framework, Node.js, Visual Studio Code, MySQL</p>
+    </div>
+    <div class="project">
+      <h3>Capstone Project</h3>
+      <p>SMART POS: Enhancing Retail Efficiency with Market Basket Analysis using Apriori Algorithm.</p>
+      <p>A point-of-sale system designed to manage sales transactions, sales reports, and product stock levels with integration of Market Basket Analysis.</p>
+      <p>- Tools and Technologies: C#, .NET Framework, Microsoft Visual Studio, MySQL</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: ahrrenretana.04@gmail.com</p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/ahrrenra</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; CSTA 2025 Ahrren Asumbrado</p>
+  </footer>
+
+</body>
+</html>
